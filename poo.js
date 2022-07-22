@@ -1,13 +1,13 @@
 class Pessoa {
     constructor(nome){
-        this.nome = nome;
+        this.nome = nome
     }
-    
-    falar(frase){
-        alert(this.nome + ' disse: ' + frase)
+
+    falar(msg){
+        alert(this.nome + ' disse ' + msg)
     }
 }
 
-var p1 = new Pessoa('Davi');
+var p1 = new Pessoa('Davi')
 
-p1.falar('Oi tudo bem')
+p1.falar('Ola tudo bem')
