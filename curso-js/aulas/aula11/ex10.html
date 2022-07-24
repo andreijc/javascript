@@ -5,9 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>detran</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, rgb(103, 138, 255), rgb(96, 228, 245),rgb(197, 72, 255));
+            background-attachment: fixed;
+        }
+    </style>
 </head>
 <body>
     <h1>Sistema de Multas</h1>
-    <input type="number" name="txt" id="">
+    <input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="Verificar" onclick="calcular()">
+
+    <div id="res">
+
+    </div>
+    <script>
+
+        function calcular() {
+            var txtv = document.getElementById('txtvel')
+            var res = document.getElementById('res')
+            var vel = Number(txtv.value)
+
+            res.innerHTML = `Sua velocidade atual é de<strong> ${vel}Km/h</strong>`
+            if (vel > 60) {
+                res.innerHTML +='<p>Você esta <strong>MULTADO</strong> por execesso de velocidade</p>' 
+            }
+            res.innerHTML += '<p>Dirila sempre com cinto de segurança</p>'
+        }
+    </script>
 </body>
 </html>
