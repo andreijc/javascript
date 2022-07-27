@@ -1,14 +1,25 @@
 @charset "UTF-8";
 
+:root {
+    --manha: rgb(248, 248, 106);
+    --tarde: rgb(252, 128, 27);
+    --noite: rgb(44, 1, 70);
+}
+
 
 body {
-   background-color: aquamarine;
+    background-color: aquamarine;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     color: white;
     text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: bold;
 }
 
 #container {
@@ -19,7 +30,11 @@ header {
     margin: auto;
     width: 600px;
     height: 400px;
+}
 
+#msg {
+    font-size: 2em;
+    font-weight: bold
 }
 
 #img {
@@ -28,7 +43,7 @@ header {
     margin-top: 30px;
     height: 300px;
     width: 300px;
-    background: url('imagens/tarde.jpg') center center no-repeat ;
+    background: center center no-repeat ;
     background-size: cover;
     border-radius: 50%;
 
