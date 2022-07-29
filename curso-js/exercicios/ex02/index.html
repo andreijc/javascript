@@ -5,21 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
-    <title>animais</title>
+    <title>Especíes</title>
 </head>
 <body>
-    <script src="main.js"></script>
+    
+    <h1>Escolha</h1>
     <div id="container">
         <div>
-            <form action="" method="post">
-                <fieldset>
-            
-                </fieldset>
-            </form>
+            <p id="escolhas">
+                <input type="radio" name="r" id="animal" checked><label for="animal">Animais</label>
+                <input type="radio" name="r" id="plantas"><label for="plantas">Plantas</label><br>
+            </p>
+
+            <p class="escondido_a">
+                <input type="radio" name="animais" id="morcego"><label for="morcego">Morcego</label>
+                <input type="radio" name="animais" id="ornitorrinco"><label for="ornitorrinco">Onitorrinco</label>
+                <input type="radio" name="animais" id="coruja"><label for="coruja">Coruja</label>
+                <input type="radio" name="animais" id="lobo"><label for="lobo">Lobo</label><br>
+            </p>
+
+            <p class="escondido_p">
+                <input type="radio" name="plantas" id="carvalho"><label for="ca[">Carvalho</label>
+                <input type="radio" name="plantas" id="jacaranda"><label for="jacaranda">Jacaranda</label>
+                <input type="radio" name="plantas" id="margaridas"><label for="margaridas">Margaridas</label>
+                <input type="radio" name="plantas" id="sakura"><label for="sakura">Sakura</label><br>
+            </p>
+    
+            <span id="botão" onclick="enviar_1()">Enviar</span>
         </div>
         <div id="img">
-
+       
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
