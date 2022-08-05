@@ -4,15 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Contar</title>
 </head>
 <body>
     <header>
-        <h1></h1>
+        <h1>Vamos contar</h1>
     </header>
     <section>
-
+        <p>
+            <label for="ini">Inicio: </label>
+            <input type="number" name="in" id="in">
+        </p>
+        <p>
+            <label for="fim">Fim: </label>
+            <input type="number" name="fim" id="fim">
+        </p>
+        <p>
+            <label for="pas">Passo: </label>
+            <input type="number" name="pass" id="pass">
+        </p>
+        <p>
+            <input type="button" value="Calcular" onclick="cal()">
+        </p>
+        <div id="res"></div>
     </section>
     <footer><p>Feito por andrei cruz</p></footer>
+    <script src="main.js"></script>
 </body>
 </html>
